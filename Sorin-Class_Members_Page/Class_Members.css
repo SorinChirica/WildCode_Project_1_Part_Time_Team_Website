@@ -1,0 +1,28 @@
+.Members-bigger-main-container{
+    display: flex;
+    width: 100%;
+}
+.Member-bigger-image{
+    size: 100%;
+    background-color: beige;
+}
+.Members-bigger-text-container{
+    width:100%;
+    background-color: burlywood;
+}
+.Members-bigger-text-Title{
+    text-align: center;
+    font-size: 35px;
+}
+.Members-bigger-text-Occupation{
+    text-align: center;
+    font-size: 25px;
+}
+.Members-bigger-text-paragraph{
+    text-align: center;
+    margin: 40px;
+}
+.Members-bigger-text-Origins{
+    text-align: center;
+    font-size: 14px;
+}
