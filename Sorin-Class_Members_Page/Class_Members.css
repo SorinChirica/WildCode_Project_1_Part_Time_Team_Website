@@ -4,6 +4,8 @@
 }
 .Member-bigger-image{
     size: 100%;
+    width: 100%;
+    height: auto;
     background-color: beige;
 }
 .Members-bigger-text-container{
