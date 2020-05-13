@@ -1,16 +1,40 @@
+
+
 .Members-bigger-main-container{
     display: flex;
-    width: 100%;
 }
-.Member-bigger-image{
-    size: 100%;
-    width: 100%;
-    height: auto;
-    background-color: beige;
+.Members-bigger-main-container div{
+    flex:1;
 }
-.Members-bigger-text-container{
+@media screen and (max-width: 1100px){
+    .Members-bigger-main-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .arrow-left{
+        opacity:0;    
+    }
+
+}
+
+.Member-bigger-image{ 
+    background: url(Class_Members_Media/Woman-wide.jpg) no-repeat center;
+    background-size: cover;
+    height: 100%!important;
+    width: 100%!important;
+    background-color: saddlebrown;
+}
+
+.arrow-left{
     width:100%;
-    background-color: burlywood;
+    height:100%;
+}
+
+
+.Members-bigger-text-container{
+    flex:1;
+    width:100%;
+    background-color: #f65454;
 }
 .Members-bigger-text-Title{
     text-align: center;
