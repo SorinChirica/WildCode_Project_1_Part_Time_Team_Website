@@ -1,4 +1,6 @@
 
+/* This part is controlling the bigger container - the one that has 2 big divs, 
+the first and the last profiles to be presented on the page */
 
 .Members-bigger-main-container{
     display: flex;
@@ -7,36 +9,19 @@
     flex:1;
 }
 
-@media screen and (max-width: 600px){
-    .Members-bigger-main-container{
-        display: flex;
-        flex-direction: column;
-    }
-    Member-bigger-image{ 
-        background-color: sienna!important;
-        z-index: 999;
-    }
-    .arrow-left{
-        transform: rotate(90deg);
-        height: 100%!important;
-        width:100%!important;
-
-        /* opacity:0;     */
-    }
-
-}
-
 .Member-bigger-image{ 
     background: url(Class_Members_Media/Woman-wide.jpg) no-repeat center;
     background-size: cover;
+    overflow:auto;
     height: 100%!important;
     width: 100%!important;
     background-color: saddlebrown;
 }
 
 .arrow-left{
-    width:100%;
+    width:auto;
     height:500px;
+    float: right;
 }
 
 
@@ -48,16 +33,62 @@
 .Members-bigger-text-Title{
     text-align: center;
     font-size: 35px;
+    font-family: 'Press Start 2P', cursive;
 }
 .Members-bigger-text-Occupation{
     text-align: center;
     font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
 }
 .Members-bigger-text-paragraph{
     text-align: center;
     margin: 40px;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
 }
 .Members-bigger-text-Origins{
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
 }
+
+/*  options for tablet screens */
+
+@media screen and (max-width: 1200px){
+    .arrow-left{
+        height:350px!important;
+    }
+    .Members-bigger-text-Title{
+        font-size: 21px!important;
+    }
+    .Members-bigger-text-Occupation{
+        font-size: 18px!important;
+        text-align: center!important;
+    }
+    .Members-bigger-text-paragraph{
+        font-size: 14px!important;
+        margin: 20px!important;
+        text-align: bottom!important;
+    }
+}
+
+/* options for small screens */
+
+@media screen and (max-width: 690px){
+    .Members-bigger-main-container{
+        flex-direction: column;
+    }
+    
+    .arrow-left{
+        transform: rotate(90deg);
+        height: 100%!important;
+        width:100%!important;
+    }
+
+}
+
+/* Here ends the first part whicsh is controlling the bigger container - the one that has 2 big divs, 
+the first and the last profiles to be presented on the page */
+
+/* And so starts the second part, which controles the rest of the page, with the containers with 4 divs each */
+
