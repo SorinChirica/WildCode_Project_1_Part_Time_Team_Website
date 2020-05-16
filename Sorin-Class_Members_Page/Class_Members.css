@@ -1,198 +1,305 @@
 
-/* This part is controlling the bigger container - the one that has 2 big divs, 
-the first and the last profiles to be presented on the page */
-
 .Members-bigger-main-container{
     display: flex;
+    border: 3px solid red;
+    height: 450px;
 }
 .Members-bigger-main-container div{
     flex:1;
-    width:100%;
-    max-width:100%;
-    height auto;
-    max-height: 400px;
+    border: 2px solid blue;
 }
 
 .Member-bigger-image{ 
     background: url(Class_Members_Media/Woman-wide.jpg) no-repeat center;
     background-size: cover;
     overflow:auto;
-
-    /* height: 100%!important;
-    width: 100%!important; */
-    background-color: saddlebrown;
+    border: 1px solid black;
 }
-
 .arrow-left{
-    max-width:100%;
-    height:auto;
     float: right;
-    max-height: 400px;
+    height:443px;
 }
+.bigger-image{
+    display:none;
+}
+
 
 
 .Members-bigger-text-container{
-    flex:1;
+    display: flex;
+    flex-direction: column;
+    /* width:100%;
+    height auto;
+    max-height: 450px; */
     background-color: #f65454;
-    position: relative;
 }
-.Members-bigger-text-Title{
+
+.Members-bigger-text-container div{
+    flex:1;
     text-align: center;
-    font-size: clamp(23px, 2vw, 35px);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Members-bigger-text-Title{
+    font-size: clamp(5px, 1.5vw, 20px);
     font-family: 'Press Start 2P', cursive;
+    line-height: 1.4;
 }
 .Members-bigger-text-Occupation{
-    text-align: center;
-    font-size: clamp(19px, 1.5vw, 21px);
+    font-size: clamp(12px, 1vw, 18px);
     font-family: 'Ubuntu', sans-serif;
 }
 .Members-bigger-text-paragraph{
-    text-align: center;
-    padding-right: 100px;
+    padding-left: 30px!important;
+    padding-right: 30px!important;
     font-size: 14px;
     font-family: 'Ubuntu', sans-serif;
 }
+
 .Members-bigger-text-Origins{
-    text-align: center;
-    font-size: 16px;
+    font-size: clamp(12px, 1vw, 18px);
     font-family: 'Ubuntu', sans-serif;
-    margin-top: 5px;
-    position: absolute;
-    bottom:0;
-    right:5%;
-    left:5%;
-}
+} 
 
-/*  options for tablet screens */
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 1100px){
+    .Members-bigger-main-container{
+        height:350px;
+    }
     .arrow-left{
-        height:350px!important;
-    }
-    .Members-bigger-text-Title{
-        font-size: 21px!important;
-    }
-    .Members-bigger-text-Occupation{
-        font-size: 18px!important;
-        text-align: center!important;
+        max-height:343px;
     }
     .Members-bigger-text-paragraph{
-        font-size: 14px!important;
-        margin: 20px!important;
-        text-align: bottom!important;
-    }
-    .Members-bigger-text-Origins{
-    position: static!important;
+        padding-left: 20px!important;
+        padding-right: 20px!important;
     }
 }
 
-/* options for small screens */
 
-@media screen and (max-width: 690px){
+  @media screen and (max-width: 600px){
     .Members-bigger-main-container{
         flex-direction: column;
+    }  
+    .bigger-image{
+        border: 1px solid black;
+        width:100%;
+        height:auto;
     }
-    
     .arrow-left{
         transform: rotate(90deg);
         height: 100%!important;
         width:100%!important;
     }
-    .Members-bigger-text-Origins{
-        position: static!important;
-        }
-
-}
-
-/* Here ends the first part whicsh is controlling the bigger container - the one that has 2 big divs, 
-the first and the last profiles to be presented on the page */
-
-/* And so starts the second part, which controles the rest of the page, with the containers with 4 divs each */
-
-.Members-smaller-main-container{
-    display: flex;
-}
-.Members-smaller-main-container div{
-    flex:1;
-    width:100%;
-    max-width:100%;
-    height auto;
-    max-height:350px;
-}
-
-.Member-smaller-image{ 
-    background: url(Class_Members_Media/Woman-wide.jpg) no-repeat center;
-    background-size: cover;
-    overflow:auto;
-    background-color: saddlebrown;
-}
-
-.smaller-arrow-left{
-    max-width:100%;
-    height auto;
-    max-height:350px;
-    float: right;
-}
-
-
-.Members-smaller-text-container{
-    flex:1;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #f65454;
-}
-.Members-smaller-text-Title{
-    text-align: center;
-    font-size: clamp(18px, 1.5vw, 25px);
-    font-family: 'Press Start 2P', cursive;
-}
-.Members-smaller-text-paragraph{
-    text-align: center;
-    font-size: 14px;
-    font-family: 'Ubuntu', sans-serif;
-}
-.Members-smaller-text-Origins{
-    text-align: center;
-    font-size: clamp(13px, 1vw, 21px);
-    font-family: 'Ubuntu', sans-serif;
-}
-
-/*  options for tablet screens */
-
-@media screen and (max-width: 1200px){
-    .Members-smaller-main-container div{
-        flex:1;
-        width:100%;
-        max-width:100%;
-        height auto;
-        max-height:350px;
-    }
-    .smaller-arrow-left{
-        height:300px!important;
-    }
-    .Members-smaller-text-Title{
-        font-size: clamp(16px, 1.3vw, 23px);
-    }
-    .Members-smaller-text-paragraph{
-        font-size: 13px!important;
-        margin: 15px!important;
-        text-align: bottom!important;
-    }.Members-smaller-text-Origins{
-        font-size: clamp(13px, 1vw, 21px);
-    }
-}
-
-/* options for small screens */
-
-@media screen and (max-width: 690px){
-    .Members-smaller-main-container{
-        flex-direction: column;
+    .Members-bigger-text-paragraph{
+        padding-left: 20px!important;
+        padding-right: 20px!important;
     }
     
-    .smaller-arrow-left{
-        transform: rotate(90deg);
-        height: 100%!important;
-        width:100%!important;
-    }
+}  
 
-}
+
+
+
+
+
+
+
+
+
+/* This part is controlling the bigger container - the one that has 2 big divs, 
+            the first and the last profiles to be presented on the page */
+
+           /* .Members-bigger-main-container{
+                display: flex;
+            }
+            .Members-bigger-main-container div{
+                flex:1;
+                width:100%;
+                max-width:100%;
+                height auto;
+                max-height: 400px;
+            }
+
+            .Member-bigger-image{ 
+                background: url(Class_Members_Media/Woman-wide.jpg) no-repeat center;
+                background-size: cover;
+                overflow:auto;
+                background-color: saddlebrown;
+            }  
+
+             .arrow-left{
+                max-width:100%;
+                height:auto;
+                float: right;
+                max-height: 400px;
+            }
+
+            .Members-bigger-text-container{
+                flex:1;
+                background-color: #f65454;
+                position: relative;
+            }
+            .Members-bigger-text-Title{
+                text-align: center;
+                font-size: clamp(23px, 2vw, 35px);
+                font-family: 'Press Start 2P', cursive;
+            }
+            .Members-bigger-text-Occupation{
+                text-align: center;
+                font-size: clamp(19px, 1.5vw, 21px);
+                font-family: 'Ubuntu', sans-serif;
+            }
+            .Members-bigger-text-paragraph{
+                text-align: center;
+                padding-right: 100px;
+                font-size: 14px;
+                font-family: 'Ubuntu', sans-serif;
+            }
+            .Members-bigger-text-paragraph:after{
+                content:"";
+                display: block;
+            }
+            .Members-bigger-text-Origins{
+                text-align: center;
+                font-size: 16px;
+                font-family: 'Ubuntu', sans-serif;
+                margin-top: 5px;
+                position: absolute;
+                bottom:0;
+                right:5%;
+                left:5%;
+            } 
+
+             
+
+             @media screen and (max-width: 950px){
+                .arrow-left{
+                    height:350px!important;
+                }
+                .Members-bigger-text-Title{
+                    font-size: 21px!important;
+                }
+                .Members-bigger-text-Occupation{
+                    font-size: 18px!important;
+                    text-align: center!important;
+                }
+                .Members-bigger-text-paragraph{
+                    font-size: 14px!important;
+                    margin: 20px!important;
+                    text-align: bottom!important;
+                }
+                .Members-bigger-text-Origins{
+                position: static!important;
+                }
+            } 
+
+            
+
+             @media screen and (max-width: 690px){
+                .Members-bigger-main-container{
+                    flex-direction: column;
+                }
+                
+                .arrow-left{
+                    transform: rotate(90deg);
+                    height: 100%!important;
+                    width:100%!important;
+                }
+                .Members-bigger-text-Origins{
+                    position: static!important;
+                    }
+
+            } 
+
+  
+            
+
+
+             .Members-smaller-main-container{
+                    display: flex;
+                }
+                .Members-smaller-main-container div{
+                    flex:1;
+                    width:100%;
+                    max-width:100%;
+                    height auto;
+                    max-height:350px;
+                }
+
+                .Member-smaller-image{ 
+                    background: url(Class_Members_Media/Woman-wide.jpg) no-repeat center;
+                    background-size: cover;
+                    overflow:auto;
+                    background-color: saddlebrown;
+                }
+
+                .smaller-arrow-left{
+                    max-width:100%;
+                    height auto;
+                    max-height:350px;
+                    float: right;
+                }
+
+
+                .Members-smaller-text-container{
+                    flex:1;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    background-color: #f65454;
+                }
+                .Members-smaller-text-Title{
+                    text-align: center;
+                    font-size: clamp(18px, 1.5vw, 25px);
+                    font-family: 'Press Start 2P', cursive;
+                }
+                .Members-smaller-text-paragraph{
+                    text-align: center;
+                    font-size: 14px;
+                    font-family: 'Ubuntu', sans-serif;
+                }
+                .Members-smaller-text-Origins{
+                    text-align: center;
+                    font-size: clamp(13px, 1vw, 21px);
+                    font-family: 'Ubuntu', sans-serif;
+                } 
+
+           
+
+             @media screen and (max-width: 1200px){
+                    .Members-smaller-main-container div{
+                        flex:1;
+                        width:100%;
+                        max-width:100%;
+                        height auto;
+                        max-height:350px;
+                    }
+                    .smaller-arrow-left{
+                        height:300px!important;
+                    }
+                    .Members-smaller-text-Title{
+                        font-size: clamp(16px, 1.3vw, 23px);
+                    }
+                    .Members-smaller-text-paragraph{
+                        font-size: 13px!important;
+                        margin: 15px!important;
+                        text-align: bottom!important;
+                    }.Members-smaller-text-Origins{
+                        font-size: clamp(13px, 1vw, 21px);
+                    }
+                } 
+
+             
+
+             @media screen and (max-width: 690px){
+                    .Members-smaller-main-container{
+                        flex-direction: column;
+                    }
+                    
+                    .smaller-arrow-left{
+                        transform: rotate(90deg);
+                        height: 100%!important;
+                        width:100%!important;
+                    }
+
+                }  
