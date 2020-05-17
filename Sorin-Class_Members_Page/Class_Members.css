@@ -12,36 +12,44 @@
             font-size: clamp(1em, 1vw, 1.2em)
         }
 
-        h2, h3, h4, h5 {
-        margin: 0.5rem 0 0.5rem;
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: bold;
-        line-height: 1.15;
+        h3, h4, h5 {
+            margin: 0.5rem 0 0.5rem;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            line-height: 1.15;
         }
-        
+ 
+        h2 {
+            margin-top: 1rem;
+            margin-bottom:0;
+            padding-left:15px;
+            padding-right:15px;
+            font-size: clamp(0.8em, 1.5vw, 2em);
+            font-family: 'Press Start 2P', cursive;
+            line-height: 1.3;
+            text-align:center;
+            }
+
         h1 {
-        margin-top: 1rem;
-        margin-bottom:0;
-        padding-left:15px;
-        padding-right:15px;
-        font-size: clamp(1.1em, 2.5vw, 2.5em);
-        font-family: 'Press Start 2P', cursive;
-        line-height: 1.3;
-        text-align:center;
+            margin-top: 1rem;
+            margin-bottom:0;
+            padding-left:15px;
+            padding-right:15px;
+            font-size: clamp(1.1em, 2.5vw, 2.5em);
+            font-family: 'Press Start 2P', cursive;
+            line-height: 1.3;
+            text-align:center;
         }
         
-        h2 {font-size: clamp(1.2em, 2vw, 1.7em);}
         h3 {font-size: clamp(1em, 1.6vw, 1.5em);}     
-        h4 {font-size: clamp(1em, 1.3vw, 1.5em);}       
+        h4 {font-size: clamp(0.6, 1vw, 1.5em);}       
         h5 {font-size: clamp(1em, 1vw, 1.5em);}
         
-        small, .text_small {font-size: 0.8em;}
-            small, .text_small {font-size: 0.75em;}
 
-            .text-decoration{
-                font-family: 'Ubuntu', sans-serif;
-                color: #dddddd; 
-            }
+        .text-decoration{
+            font-family: 'Ubuntu', sans-serif;
+            color: #dddddd; 
+        }
 
     /* Tablet - options ---------------------------------------------*/  
         @media screen and (max-width: 1100px){
@@ -57,21 +65,32 @@
     body{
         margin:0;
         padding:0;
+        background-color: #f65454; 
     }
 
     /* Main container ------------------------------------------------*/
         .Members-bigger-main-container-top, 
-        .Members-bigger-main-container-bottom {
+        .Members-bigger-main-container-bottom,
+        .Members-smaller-main-container {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             height: 430px;
             background-color: #f65454;
             margin:0;
-            /* border: 3px solid red; */
+            /* border: 3px solid black; */
         }
         
+        .Members-smaller-main-container{
+            height:300px;
+        }
+
+        .Members-textFirst-break{
+            display:none;
+        }
         .Members-bigger-main-container-top div,
-        .Members-bigger-main-container-bottom div {
+        .Members-bigger-main-container-bottom div,
+        .Members-smaller-main-container div {
             flex:1;
             /* border: 2px solid blue; */
         }
@@ -86,41 +105,66 @@
                 background: url(Class_Members_Media/Man-wide.jpg) no-repeat top;
                 background-size: cover;
                 overflow:auto;
-
             }
-            /* Arrow pointing left */
-            .arrow-right{
+            #Member-smaller-image-Div1-img-1{
+                background: url(Class_Members_Media/Man-3-square.jpg) no-repeat center;
+                background-size: cover;
+                overflow:auto;
+            }
+            #Member-smaller-image-Div1-img-2{
+                background: url(Class_Members_Media/Woman-3-square.jpg) no-repeat center;
+                background-size: cover;
+                overflow:auto;
+            }
+         /* Arrows  ------------------------------------------------------ */
+            .arrow-right-large{
                 float: right;
                 height:430px;
             }
-            .arrow-left{
+            .arrow-left-large{
                 transform: rotate(180deg);
                 float:left;
                 height:430px;
             }
+            .arrow-right-small{
+                float: right;
+                height:300px;
+            }
+            .arrow-left-small,
+            .arrow-left-small-toBeTurned{
+                transform: rotate(180deg);
+                float:left;
+                height:300px;
+            }
+
 
         /* Desktop - texts ------------------------------------------------*/
-            .Members-bigger-text-container{
+            .Members-bigger-text-container,
+            .Members-smaller-text-container{
                 background-color: #f65454;
+                /* height:100%; */
             }
-            .Members-bigger-text{
+            .Members-text{
                 text-align:center;
             }
-            .Members-bigger-text div{
+            .Members-text div{
                 flex:1;
                 text-align: center;
                 padding-left: 10px;
                 padding-right: 10px;
             }
-            .Members-bigger-text-paragraph{
-                margin-top:4vw;
+            .Members-text-paragraph{
+                margin-top:20px;
             }
-            .Members-bigger-text-Origins{
+            .Members-text-paragraph-wide{
+                margin-top:3vw;
+            }
+            .Members-text-Origins{
                 margin-top:50px;
                 position:relative;
                 
             }
-            .Members-bigger-text-Origins::before{
+            .Members-text-Origins::before{
                 content:"";
                 background-color: #dddddd;
                 display:block;
@@ -141,12 +185,33 @@
                     .Members-bigger-main-container-bottom {
                         height:300px;
                     }
-                 /* Arrow pointing left */
-                    .arrow-left{
+                    .Members-smaller-main-container {
+                        height:300px;
+                    }
+                    .Members-textFirst-break{
+                        display:block;
+                        flex-basis:100%!important;
+                        height:0;
+                    }
+                    .Members-textFirst-3{
+                        order:5;
+                    }
+                    .Members-textFirst-4{
+                        order:4;
+                    }
+
+                 /* Arrows ---------------------------------------------------- */
+                    .arrow-left-large,
+                    .arrow-right-large{
+                        max-height:300px;
+                    }                                      
+                    .arrow-left-small,
+                    .arrow-right-small{
                         max-height:300px;
                     }
-                    .arrow-right{
-                        max-height:300px;
+                    .arrow-left-small-toBeTurned{
+                        transform: rotate(0deg);
+                        float: right;
                     }
                 /* Tablet - texts */
                 
@@ -164,20 +229,38 @@
                         flex-direction: column-reverse; 
                         height:100%;
                     }
-                    .bigger-image{
-                        border: 1px solid black;
-                        width:100%;
-                        height:auto;
+                    
+                    .Members-smaller-main-container{
+                        flex-direction:column;
+                        height:100%;
+                    }
+                    .Members-textFirst-break{
+                        display:none;
+                    }
+                    .Members-textFirst-1{
+                        order:2;
+                    }
+                    .Members-textFirst-2{
+                        order:1;
+                    }
+                    .Members-textFirst-4{
+                        order:5;
+                    }
+                    .Members-textFirst-5{
+                        order:4;
                     }
                  /* Arrow pointing up */
-                    .arrow-right{
+                    .arrow-right-large,
+                    .arrow-right-small{
                         transform: rotate(90deg);
                         display:block;
                         width:100%!important;
                         height: auto!important;
                         max-height: 600px;
                     }
-                    .arrow-left{
+                    .arrow-left-large,
+                    .arrow-left-small,
+                    .arrow-left-small-toBeTurned{
                         transform: rotate(90deg);
                         display:block;
                         width:100%!important;
@@ -186,14 +269,14 @@
                     }
 
              /* Mobile - texts -------------------------------------------------*/
-             .Members-bigger-text-Title{
+             .Members-text-Title{
                  margin-top:30px;
              }
-                .Members-bigger-text-Origins{
+                .Members-text-Origins{
                     margin-top:40px;
                     margin-bottom:30px;
                 }  
-                .Members-bigger-text-paragraph{
+                .Members-text-paragraph{
                     margin-top:25px;
 
 /* ---------------> End of the first part */
