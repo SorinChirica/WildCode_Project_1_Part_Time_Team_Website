@@ -1,305 +1,202 @@
 
-.Members-bigger-main-container{
-    display: flex;
-    border: 3px solid red;
-    height: 450px;
-}
-.Members-bigger-main-container div{
-    flex:1;
-    border: 2px solid blue;
-}
-
-.Member-bigger-image{ 
-    background: url(Class_Members_Media/Woman-wide.jpg) no-repeat center;
-    background-size: cover;
-    overflow:auto;
-    border: 1px solid black;
-}
-.arrow-left{
-    float: right;
-    height:443px;
-}
-.bigger-image{
-    display:none;
-}
-
-
-
-.Members-bigger-text-container{
-    display: flex;
-    flex-direction: column;
-    /* width:100%;
-    height auto;
-    max-height: 450px; */
-    background-color: #f65454;
-}
-
-.Members-bigger-text-container div{
-    flex:1;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.Members-bigger-text-Title{
-    font-size: clamp(5px, 1.5vw, 20px);
-    font-family: 'Press Start 2P', cursive;
-    line-height: 1.4;
-}
-.Members-bigger-text-Occupation{
-    font-size: clamp(12px, 1vw, 18px);
-    font-family: 'Ubuntu', sans-serif;
-}
-.Members-bigger-text-paragraph{
-    padding-left: 30px!important;
-    padding-right: 30px!important;
-    font-size: 14px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.Members-bigger-text-Origins{
-    font-size: clamp(12px, 1vw, 18px);
-    font-family: 'Ubuntu', sans-serif;
-} 
-
-
-@media screen and (max-width: 1100px){
-    .Members-bigger-main-container{
-        height:350px;
-    }
-    .arrow-left{
-        max-height:343px;
-    }
-    .Members-bigger-text-paragraph{
-        padding-left: 20px!important;
-        padding-right: 20px!important;
-    }
-}
-
-
-  @media screen and (max-width: 600px){
-    .Members-bigger-main-container{
-        flex-direction: column;
-    }  
-    .bigger-image{
-        border: 1px solid black;
-        width:100%;
-        height:auto;
-    }
-    .arrow-left{
-        transform: rotate(90deg);
-        height: 100%!important;
-        width:100%!important;
-    }
-    .Members-bigger-text-paragraph{
-        padding-left: 20px!important;
-        padding-right: 20px!important;
-    }
-    
-}  
-
-
-
-
-
-
-
-
-
 
 /* This part is controlling the bigger container - the one that has 2 big divs, 
             the first and the last profiles to be presented on the page */
 
-           /* .Members-bigger-main-container{
-                display: flex;
-            }
-            .Members-bigger-main-container div{
-                flex:1;
-                width:100%;
-                max-width:100%;
-                height auto;
-                max-height: 400px;
+    /* Font sizes - Desktop options */
+
+        p {
+            margin-bottom: 1.15rem;
+            padding-left: 25px;
+            padding-right: 25px;
+            font-size: clamp(1em, 1vw, 1.2em)
+        }
+
+        h2, h3, h4, h5 {
+        margin: 0.5rem 0 0.5rem;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        line-height: 1.15;
+        }
+        
+        h1 {
+        margin-top: 1rem;
+        margin-bottom:0;
+        padding-left:15px;
+        padding-right:15px;
+        font-size: clamp(1.1em, 2.5vw, 2.5em);
+        font-family: 'Press Start 2P', cursive;
+        line-height: 1.3;
+        text-align:center;
+        }
+        
+        h2 {font-size: clamp(1.2em, 2vw, 1.7em);}
+        h3 {font-size: clamp(1em, 1.6vw, 1.5em);}     
+        h4 {font-size: clamp(1em, 1.3vw, 1.5em);}       
+        h5 {font-size: clamp(1em, 1vw, 1.5em);}
+        
+        small, .text_small {font-size: 0.8em;}
+            small, .text_small {font-size: 0.75em;}
+
+            .text-decoration{
+                font-family: 'Ubuntu', sans-serif;
+                color: #dddddd; 
             }
 
-            .Member-bigger-image{ 
-                background: url(Class_Members_Media/Woman-wide.jpg) no-repeat center;
+    /* Tablet - options ---------------------------------------------*/  
+        @media screen and (max-width: 1100px){
+
+        }
+
+    /* Mobile - options ----------------------------------------------*/ 
+        @media screen and (max-width: 600px){
+
+        }
+
+  /* General ---------------------------------------------------------*/
+    body{
+        margin:0;
+        padding:0;
+    }
+
+    /* Main container ------------------------------------------------*/
+        .Members-bigger-main-container-top, 
+        .Members-bigger-main-container-bottom {
+            display: flex;
+            align-items: center;
+            height: 430px;
+            background-color: #f65454;
+            margin:0;
+            /* border: 3px solid red; */
+        }
+        
+        .Members-bigger-main-container-top div,
+        .Members-bigger-main-container-bottom div {
+            flex:1;
+            /* border: 2px solid blue; */
+        }
+
+        /* Desktop - images -----------------------------------------*/
+            #Member-bigger-image-top{
+                background: url(Class_Members_Media/Woman-wide.jpg) no-repeat top;
                 background-size: cover;
                 overflow:auto;
-                background-color: saddlebrown;
-            }  
+            }
+            #Member-bigger-image-bottom{
+                background: url(Class_Members_Media/Man-wide.jpg) no-repeat top;
+                background-size: cover;
+                overflow:auto;
 
-             .arrow-left{
-                max-width:100%;
-                height:auto;
+            }
+            /* Arrow pointing left */
+            .arrow-right{
                 float: right;
-                max-height: 400px;
+                height:430px;
+            }
+            .arrow-left{
+                transform: rotate(180deg);
+                float:left;
+                height:430px;
             }
 
+        /* Desktop - texts ------------------------------------------------*/
             .Members-bigger-text-container{
-                flex:1;
                 background-color: #f65454;
-                position: relative;
             }
-            .Members-bigger-text-Title{
-                text-align: center;
-                font-size: clamp(23px, 2vw, 35px);
-                font-family: 'Press Start 2P', cursive;
+            .Members-bigger-text{
+                text-align:center;
             }
-            .Members-bigger-text-Occupation{
+            .Members-bigger-text div{
+                flex:1;
                 text-align: center;
-                font-size: clamp(19px, 1.5vw, 21px);
-                font-family: 'Ubuntu', sans-serif;
+                padding-left: 10px;
+                padding-right: 10px;
             }
             .Members-bigger-text-paragraph{
-                text-align: center;
-                padding-right: 100px;
-                font-size: 14px;
-                font-family: 'Ubuntu', sans-serif;
-            }
-            .Members-bigger-text-paragraph:after{
-                content:"";
-                display: block;
+                margin-top:4vw;
             }
             .Members-bigger-text-Origins{
-                text-align: center;
-                font-size: 16px;
-                font-family: 'Ubuntu', sans-serif;
-                margin-top: 5px;
-                position: absolute;
-                bottom:0;
-                right:5%;
-                left:5%;
-            } 
-
-             
-
-             @media screen and (max-width: 950px){
-                .arrow-left{
-                    height:350px!important;
-                }
-                .Members-bigger-text-Title{
-                    font-size: 21px!important;
-                }
-                .Members-bigger-text-Occupation{
-                    font-size: 18px!important;
-                    text-align: center!important;
-                }
-                .Members-bigger-text-paragraph{
-                    font-size: 14px!important;
-                    margin: 20px!important;
-                    text-align: bottom!important;
-                }
-                .Members-bigger-text-Origins{
-                position: static!important;
-                }
-            } 
-
-            
-
-             @media screen and (max-width: 690px){
-                .Members-bigger-main-container{
-                    flex-direction: column;
-                }
+                margin-top:50px;
+                position:relative;
                 
-                .arrow-left{
-                    transform: rotate(90deg);
-                    height: 100%!important;
-                    width:100%!important;
-                }
-                .Members-bigger-text-Origins{
-                    position: static!important;
-                    }
+            }
+            .Members-bigger-text-Origins::before{
+                content:"";
+                background-color: #dddddd;
+                display:block;
+                position: absolute;            
+                width: 10vw;
+                height:1px;
+                top: 6;
+                left: 50%;
+                margin-left: -5vw;
+                bottom:35px;
 
             } 
 
-  
-            
-
-
-             .Members-smaller-main-container{
-                    display: flex;
-                }
-                .Members-smaller-main-container div{
-                    flex:1;
-                    width:100%;
-                    max-width:100%;
-                    height auto;
-                    max-height:350px;
-                }
-
-                .Member-smaller-image{ 
-                    background: url(Class_Members_Media/Woman-wide.jpg) no-repeat center;
-                    background-size: cover;
-                    overflow:auto;
-                    background-color: saddlebrown;
-                }
-
-                .smaller-arrow-left{
-                    max-width:100%;
-                    height auto;
-                    max-height:350px;
-                    float: right;
-                }
-
-
-                .Members-smaller-text-container{
-                    flex:1;
-                    padding-left: 20px;
-                    padding-right: 20px;
-                    background-color: #f65454;
-                }
-                .Members-smaller-text-Title{
-                    text-align: center;
-                    font-size: clamp(18px, 1.5vw, 25px);
-                    font-family: 'Press Start 2P', cursive;
-                }
-                .Members-smaller-text-paragraph{
-                    text-align: center;
-                    font-size: 14px;
-                    font-family: 'Ubuntu', sans-serif;
-                }
-                .Members-smaller-text-Origins{
-                    text-align: center;
-                    font-size: clamp(13px, 1vw, 21px);
-                    font-family: 'Ubuntu', sans-serif;
-                } 
-
-           
-
-             @media screen and (max-width: 1200px){
-                    .Members-smaller-main-container div{
-                        flex:1;
-                        width:100%;
-                        max-width:100%;
-                        height auto;
-                        max-height:350px;
+        /* Tablet - options ----------------------------------------------------*/  
+            @media screen and (max-width: 1100px){
+                /* Tablet - images */
+                    .Members-bigger-main-container-top,
+                    .Members-bigger-main-container-bottom {
+                        height:300px;
                     }
-                    .smaller-arrow-left{
-                        height:300px!important;
+                 /* Arrow pointing left */
+                    .arrow-left{
+                        max-height:300px;
                     }
-                    .Members-smaller-text-Title{
-                        font-size: clamp(16px, 1.3vw, 23px);
+                    .arrow-right{
+                        max-height:300px;
                     }
-                    .Members-smaller-text-paragraph{
-                        font-size: 13px!important;
-                        margin: 15px!important;
-                        text-align: bottom!important;
-                    }.Members-smaller-text-Origins{
-                        font-size: clamp(13px, 1vw, 21px);
-                    }
-                } 
+                /* Tablet - texts */
+                
 
-             
-
-             @media screen and (max-width: 690px){
-                    .Members-smaller-main-container{
+        /* Mobile - options ----------------------------------------------------*/ 
+            @media screen and (max-width: 600px){
+             /* Mobile - images */
+                    .Members-bigger-main-container-top{
+                        /* display:none;                         */
                         flex-direction: column;
+                        height:100%;
+                    }  
+                     .Members-bigger-main-container-bottom{
+                        /* display:none; */
+                        flex-direction: column-reverse; 
+                        height:100%;
                     }
-                    
-                    .smaller-arrow-left{
+                    .bigger-image{
+                        border: 1px solid black;
+                        width:100%;
+                        height:auto;
+                    }
+                 /* Arrow pointing up */
+                    .arrow-right{
                         transform: rotate(90deg);
-                        height: 100%!important;
+                        display:block;
                         width:100%!important;
+                        height: auto!important;
+                        max-height: 600px;
+                    }
+                    .arrow-left{
+                        transform: rotate(90deg);
+                        display:block;
+                        width:100%!important;
+                        height: auto!important;
+                        max-height: 600px;
                     }
 
+             /* Mobile - texts -------------------------------------------------*/
+             .Members-bigger-text-Title{
+                 margin-top:30px;
+             }
+                .Members-bigger-text-Origins{
+                    margin-top:40px;
+                    margin-bottom:30px;
                 }  
+                .Members-bigger-text-paragraph{
+                    margin-top:25px;
+
+/* ---------------> End of the first part */
+
+
+/* The second part is for all the smaller images and texts */
