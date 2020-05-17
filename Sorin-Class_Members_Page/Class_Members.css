@@ -79,8 +79,7 @@
             background-color: #f65454;
             margin:0;
             /* border: 3px solid black; */
-        }
-        
+        }        
         .Members-smaller-main-container{
             height:300px;
         }
@@ -186,7 +185,7 @@
                         height:300px;
                     }
                     .Members-smaller-main-container {
-                        height:300px;
+                        height:auto;                       
                     }
                     .Members-textFirst-break{
                         display:block;
@@ -235,20 +234,25 @@
                         height:100%;
                     }
                     .Members-textFirst-break{
+                        order:3;
                         display:none;
+                    }
+                    .Members-textFirst-2{
+                        order:-1;
+                        /* display:none; */
                     }
                     .Members-textFirst-1{
                         order:2;
+                        /* display:none; */
                     }
-                    .Members-textFirst-2{
-                        order:1;
-                    }
-                    .Members-textFirst-4{
+                    
+                    .Members-textFirst-3{
                         order:5;
                     }
-                    .Members-textFirst-5{
+                    .Members-textFirst-4{
                         order:4;
                     }
+
                  /* Arrow pointing up */
                     .arrow-right-large,
                     .arrow-right-small{
