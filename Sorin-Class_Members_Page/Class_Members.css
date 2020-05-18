@@ -78,7 +78,18 @@
             background-color: #f65454;
             margin:0;
             /* border: 3px solid black; */
-        }     
+        }  
+        .Members-smaller-main-container{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            height:auto;
+            min-height:270px;
+            background-color: #f65454;
+            margin:0;
+            /* border: 3px solid black; */
+            
+        }   
         
         .Members-bigger-main-container-top{
             position:relative;
@@ -93,17 +104,6 @@
             -webkit-box-shadow: 0px -20px 42px -26px rgba(0,0,0,0.95);
             -moz-box-shadow: 0px -20px 42px -26px rgba(0,0,0,0.95);
             box-shadow: 0px -20px 42px -26px rgba(0,0,0,0.95);
-        }
-        .Members-smaller-main-container{
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            height:auto;
-            min-height:270px;
-            background-color: #f65454;
-            margin:0;
-            /* border: 3px solid black; */
-            
         }
 
         .Members-textFirst-break{
@@ -126,31 +126,191 @@
                 background-size: cover;
                 overflow:auto;
             }
+                #Member-bigger-image-top:hover{
+                    background: url(Class_Members_Media/Woman-wide-hover.jpg) no-repeat top;
+                    background-size: cover;
+                    overflow:auto;
+                }
             #Member-bigger-image-bottom{
                 background: url(Class_Members_Media/Man-wide.jpg) no-repeat top;
                 background-size: cover;
                 overflow:auto;
             }
+                #Member-bigger-image-bottom:hover{
+                    background: url(Class_Members_Media/Man-wide-hover.jpg) no-repeat top;
+                    background-size: cover;
+                    overflow:auto;
+                }
+
             #Member-smaller-image-Div1-img-1{
                 background: url(Class_Members_Media/Man-3-square.jpg) no-repeat center;
                 background-size: cover;
                 overflow:auto;
             }
+                #Member-smaller-image-Div1-img-1:hover{
+                    background: url(Class_Members_Media/Man-3-square-hover.jpg) no-repeat center;
+                    background-size: cover;
+                    overflow:auto;
+                }
             #Member-smaller-image-Div1-img-2{
                 background: url(Class_Members_Media/Woman-3-square.jpg) no-repeat center;
                 background-size: cover;
                 overflow:auto;
             }
+                #Member-smaller-image-Div1-img-2:Hover{
+                    background: url(Class_Members_Media/Woman-3-square-hover.jpg) no-repeat center;
+                    background-size: cover;
+                    overflow:auto;
+                }
+
             #Member-smaller-image-Div2-img-1{
                 background: url(Class_Members_Media/Woman-2-square.jpg) no-repeat center;
                 background-size: cover;
                 overflow:auto;
             }
+                #Member-smaller-image-Div2-img-1:hover{
+                    background: url(Class_Members_Media/Woman-2-square-hover.jpg) no-repeat center;
+                    background-size: cover;
+                    overflow:auto;
+                }
             #Member-smaller-image-Div2-img-2{
                 background: url(Class_Members_Media/Man-2-square.jpg) no-repeat center;
                 background-size: cover;
                 overflow:auto;
+            }    
+                #Member-smaller-image-Div2-img-2:hover{
+                    background: url(Class_Members_Media/Man-2-square-hover.jpg) no-repeat center;
+                    background-size: cover;
+                    overflow:auto;
+                }   
+
+            #Member-smaller-image-Div3-img-1{
+                background: url(Class_Members_Media/Woman-4-square.jpg) no-repeat center;
+                background-size: cover;
+                overflow:auto;
             }
+                #Member-smaller-image-Div3-img-1:hover{
+                    background: url(Class_Members_Media/Woman-4-square-hover.jpg) no-repeat center;
+                    background-size: cover;
+                    overflow:auto;
+                }
+            #Member-smaller-image-Div3-img-2{
+                background: url(Class_Members_Media/Woman-6-square.jpg) no-repeat center;
+                background-size: cover;
+                overflow:auto;
+            }
+                #Member-smaller-image-Div3-img-2:hover{
+                    background: url(Class_Members_Media/Woman-6-square-hover.jpg) no-repeat center;
+                    background-size: cover;
+                    overflow:auto;
+                }
+
+            #Member-smaller-image-Div4-img-1{
+                background: url(Class_Members_Media/Man-7-square.jpg) no-repeat center;
+                background-size: cover;
+                overflow:auto;
+            }
+                #Member-smaller-image-Div4-img-1:hover{
+                    background: url(Class_Members_Media/Man-7-square-hover.jpg) no-repeat center;
+                    background-size: cover;
+                    overflow:auto;
+                }
+            #Member-smaller-image-Div4-img-2{
+                background: url(Class_Members_Media/Woman-1-square.jpg) no-repeat center;
+                background-size: cover;
+                overflow:auto;
+            }      
+                #Member-smaller-image-Div4-img-2:hover{
+                    background: url(Class_Members_Media/Woman-1-square-hover.jpg) no-repeat center;
+                    background-size: cover;
+                    overflow:auto;
+                }       
+
+            #Member-smaller-image-Div5-img-1{
+                background: url(Class_Members_Media/Man-5-square.jpg) no-repeat center;
+                background-size: cover;
+                overflow:auto;
+            }
+                #Member-smaller-image-Div5-img-1:hover{
+                    background: url(Class_Members_Media/Man-5-square-hover.jpg) no-repeat center;
+                    background-size: cover;
+                    overflow:auto;
+                }
+            #Member-smaller-image-Div5-img-2{
+                background: url(Class_Members_Media/Man-2-square.jpg) no-repeat center;
+                background-size: cover;
+                overflow:auto;
+            }
+                #Member-smaller-image-Div5-img-2:hover{
+                    background: url(Class_Members_Media/Man-2-square-hover.jpg) no-repeat center;
+                    background-size: cover;
+                    overflow:auto;
+                }
+
+            #Member-smaller-image-Div6-img-1{
+                background: url(Class_Members_Media/Woman-3-square.jpg) no-repeat center;
+                background-size: cover;
+                overflow:auto;
+            }
+                #Member-smaller-image-Div6-img-1:hover{
+                    background: url(Class_Members_Media/Woman-3-square-hover.jpg) no-repeat center;
+                    background-size: cover;
+                    overflow:auto;
+                }
+            #Member-smaller-image-Div6-img-2{
+                background: url(Class_Members_Media/Man-6-square.jpg) no-repeat center;
+                background-size: cover;
+                overflow:auto;
+            } 
+                #Member-smaller-image-Div6-img-2:hover{
+                    background: url(Class_Members_Media/Man-6-square-hover.jpg) no-repeat center;
+                    background-size: cover;
+                    overflow:auto;
+                } 
+
+            #Member-smaller-image-Div7-img-1{
+                background: url(Class_Members_Media/Woman-1-square.jpg) no-repeat center;
+                background-size: cover;
+                overflow:auto;
+            }
+                #Member-smaller-image-Div7-img-1:hover{
+                    background: url(Class_Members_Media/Woman-1-square-hover.jpg) no-repeat center;
+                    background-size: cover;
+                    overflow:auto;
+                }
+            #Member-smaller-image-Div7-img-2{
+                background: url(Class_Members_Media/Man-1-square.jpg) no-repeat center;
+                background-size: cover;
+                overflow:auto;
+            }
+                #Member-smaller-image-Div7-img-2:hover{
+                    background: url(Class_Members_Media/Man-1-square-hover.jpg) no-repeat center;
+                    background-size: cover;
+                    overflow:auto;
+                }
+
+            #Member-smaller-image-Div8-img-1{
+                background: url(Class_Members_Media/Woman-2-square.jpg) no-repeat center;
+                background-size: cover;
+                overflow:auto;
+            }
+                #Member-smaller-image-Div8-img-1:hover{
+                    background: url(Class_Members_Media/Woman-2-square-hover.jpg) no-repeat center;
+                    background-size: cover;
+                    overflow:auto;
+                }
+            #Member-smaller-image-Div8-img-2{
+                background: url(Class_Members_Media/Man-5-square.jpg) no-repeat center;
+                background-size: cover;
+                overflow:auto;
+            }
+                #Member-smaller-image-Div8-img-2:hover{
+                    background: url(Class_Members_Media/Man-5-square-hover.jpg) no-repeat center;
+                    background-size: cover;
+                    overflow:auto;
+                }
+
+            
          /* Arrows  ------------------------------------------------------ */
             .arrow-right-large{
                 float: right;
