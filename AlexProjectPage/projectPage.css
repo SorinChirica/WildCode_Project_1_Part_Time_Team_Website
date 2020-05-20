@@ -10,20 +10,23 @@ body {
     justify-content: center;
     align-items: center;
      */
-    padding: 10%;
     background-image: url('https://thedigitalprojectmanager.com/wp-content/uploads/2019/06/project-objectives-featured-image.png');
-  }
+    
+}
 
   .text-box {
     text-align: center;
     margin: auto;
-    width: 60%;
-    background-color: aliceblue;
- 
+/* no need width 80% here */
+    padding: 5%;
 /* padding should not be colored */
 
   }
 
+  .text {
+    background-color: aliceblue;
+    padding: 2%;
+  }
 
 /* how to reduce height of tex-box? height 80% not work */
 
