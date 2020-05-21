@@ -1,33 +1,134 @@
 body {
-
 }
 
-/* .project-intro {
+/* font sizes */
+p {
+  margin-bottom: 1.15rem;
+  padding-left: 15px;
+  padding-right: 25px;
+  font-size: clamp(1em, 1vw, 1.2em);
+}
+
+h3,
+h4,
+h5 {
+  margin: 0.5rem 0 0.5rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  line-height: 1.15;
+}
+
+h2 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: clamp(0.8em, 1.5vw, 2em);
+  font-family: "Press Start 2P", cursive;
+  line-height: 1.3;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: clamp(1.1em, 2.5vw, 2.5em);
+  font-family: "Press Start 2P", cursive;
+  line-height: 1.3;
+  /* text-align: center; */
+}
+
+h3 {
+  font-size: clamp(1em, 1.6vw, 1.5em);
+}
+h4 {
+  font-size: clamp(0.6, 1vw, 1.5em);
+}
+h5 {
+  font-size: clamp(1em, 1vw, 1.5em);
+}
+
+.text-decoration {
+  font-family: "Ubuntu", sans-serif;
+  color: #dddddda4;
+}
+
+/* General ---------------------------------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color:  */
+}
+
+/* ---- */
+/* projects banner */
+/* .text-box-container .h1 {
+  text-align: left;
 } */
+/* Q- could not alight left the heading */
+
 
 .text-box-container {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-     */
-    background-image: url('https://thedigitalprojectmanager.com/wp-content/uploads/2019/06/project-objectives-featured-image.png');
-    
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+   */
+  background-image: url("https://thedigitalprojectmanager.com/wp-content/uploads/2019/06/project-objectives-featured-image.png");
 }
 
-  .text-box {
-    text-align: center;
-    margin: auto;
-/* no need width 80% here */
-    padding: 5%;
-/* padding should not be colored */
+.text-box-container .text-box {
+  text-align: left;
+  margin: auto;
+  /* no need width 80% here */
+  padding: 5%;
+  /* padding should not be colored */
+}
 
-  }
+.text-box-container .text {
+  background-color: aliceblue;
+  padding: 2%;
+}
 
-  .text {
-    background-color: aliceblue;
-    padding: 2%;
-  }
+
+/* ----- */
+/* projects */
+.project-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-box {
+  /* max-width: 30%;
+  width: auto; */
+  width: 30%;
+  height: 300px;
+  padding: 2%;
+}
+
+.project-image-div {
+  width: 100%;
+  height: 80%;
+}
+
+.project-image {
+  /* max-width: 100%;
+  width: auto; */
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+
+
+.project-text {
+  /* text-align: left; */
+  line-height: 0.5;
+
+
+}
 
 /* how to reduce height of tex-box? height 80% not work */
-
-
