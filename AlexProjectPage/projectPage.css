@@ -62,13 +62,11 @@ body {
   /* background-color:  */
 }
 
+
+
 /* ---- */
 /* projects banner */
-/* .text-box-container .h1 {
-  text-align: left;
-} */
 /* Q- could not alight left the heading */
-
 
 .text-box-container {
   /* display: flex;
@@ -134,9 +132,59 @@ body {
 
   padding-left:1% ;
   padding-right:1% ;
-  
+  /* overflow: hidden; */
   /* overflow-wrap: normal; */
 
 }
 
-/* how to reduce height of tex-box? height 80% not work */
+
+/* mobile  */
+@media screen and (max-width: 600px) {
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+/* didnt make a difference putting the above code */
+
+}
+
+.project-box {
+  max-width: 80%;
+  
+}
+
+
+/* .project-image-div {
+}
+
+} */
+
+
+@media screen and (max-width: 1100px) {
+  .project-container {
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-start; */
+    /* no need align items here */
+    justify-content: center;
+  }
+
+
+
+  .project-box {
+    max-width: 40%;
+  }
+  /* flexbox */
+
+
+
+
+
+}
+
+
+
+/* other issues to think about */
+
+/* text overflow from project-text-div */
