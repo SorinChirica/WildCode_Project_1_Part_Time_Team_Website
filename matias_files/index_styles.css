@@ -165,10 +165,9 @@ p {
 /* carrousel */
 
 .carrousel {
-
     background-color: #f65454;
     width: 100%;
-    height: 500px;
+    /* height: 500px; */
     margin: 0;
 }
 
