@@ -1,0 +1,175 @@
+body {
+    background-image: url('./MatiasMedia/Main\ Page\ Wireframe.jpg');
+    margin: 0;
+
+}
+button {
+    border-radius: 0;
+}
+
+/* flex column preset */
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/**/
+
+.bodyContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.headerTop {
+    width: 100%;
+    height: 383px;
+    background-color: #383838;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.headerContentCenter {
+    margin-top: 55px;
+    width: 50%;
+    color: white;
+}
+
+/* HEADER ADMIN PICS */
+
+.headerAdminPics {
+    display: flex;
+    flex-direction: row;
+    height: 0px;
+    justify-content: center;
+    position: relative;
+    top: 61px;
+}
+
+.circleAdminPicsRow {
+    width: 61%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.container_cirleAdminPics {
+    display: flex;
+    width: 256px;
+    justify-content: center;
+    
+}
+
+.container_cirleAdminText {
+    text-align: center;
+}
+
+.circleAdminPics {
+    border-radius: 100%;
+    width: 163px;
+    height: 163px;
+}
+
+.headerBottom {
+    width: 100%;
+    height: 269px;
+    margin: 0;
+    background-color: white;
+}
+
+/* HEADER ADMIN PICS - End*/
+
+.linkToPageA {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 426px; /* DEMO HEIGHT */
+    margin: 0;
+}
+
+.linkToPageB {
+    border-top: 1px solid #222222;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 415px; /* DEMO HEIGHT */
+    margin: 0;
+}
+
+.linkToPageC {
+    border-top: 1px solid #222222;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 419px; /* DEMO HEIGHT */
+    margin: 0;
+}
+
+.linktoPagePic {
+    width: 260%;
+    background-color: #383838;
+}
+
+.linktoPageText-container {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linktoPageText {
+    width: 70%;
+}
+
+/* carrousel */
+
+.carrousel {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 390px;
+    margin: 0;
+}
+
+.carrouselText-container {
+    background-color: #383838;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 50%;    
+}
+
+.carrouselText {
+    width: 80%;
+}
+
+.carrouselPic {
+    width: 50%;      
+}
+
+.carrouselPicJPEG {
+    width: 100%;
+    object-fit: cover; 
+    overflow: hidden;
+}
+
+.linksToCourses {
+    background-color: #ededed;
+    width: 100%;
+    height: 540px;
+    margin: 0;
+}
+
+.footer {
+    border: 1px solid black;
+    background-color: #383838;
+    width: 100%;
+    height: 300px;
+    margin: 0;
+}
