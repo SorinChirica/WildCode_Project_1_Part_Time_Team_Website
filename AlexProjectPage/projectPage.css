@@ -91,7 +91,7 @@ body {
 
 
 /* ----- */
-/* projects */
+/* projects flexbox*/
 .project-container {
   display: flex;
   align-items: flex-start;
@@ -101,19 +101,19 @@ body {
 }
 
 .project-box {
-  max-width: 30%;
+  max-width: 25%;
   /* width: 30%; */
   height: 500px;
-  padding: 1%;
-  border: 1px solid;
+  /* padding: 1%; */
+  /* border: 1px solid; */
 }
 
 .project-image-div {
   height: 50%;
   overflow: hidden;
   width: 100%;
-  border: 1px solid blue;
-  border-radius: 10px;
+  /* border: 1px solid blue; */
+  /* border-radius: 10px; */
 }
 
 .project-image {
@@ -134,7 +134,7 @@ body {
   padding-right:1% ;
   /* overflow: hidden; */
   /* overflow-wrap: normal; */
-
+  background-color:#f65454; 
 }
 
 
@@ -150,7 +150,7 @@ body {
 }
 
 .project-box {
-  max-width: 80%;
+  max-width: 100%;
   
 }
 
@@ -161,6 +161,7 @@ body {
 } */
 }
 
+/* Ipad */
 @media (min-width: 601px) and (max-width: 1100px) {
   .project-container {
     display: flex;
@@ -171,7 +172,7 @@ body {
   }
 
   .project-box {
-    max-width: 40%;
+    max-width: 50%;
   }
   /* flexbox */
 
