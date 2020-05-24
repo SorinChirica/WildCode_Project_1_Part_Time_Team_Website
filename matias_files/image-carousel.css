@@ -2,11 +2,12 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 85%;
   position: relative;
   margin: auto;
-  max-height: 645px;
+  max-height: 500px;
   overflow: hidden;
+ 
 }
 
 /* Hide the images by default */
@@ -36,9 +37,8 @@
   border-radius: 3px 0 0 3px;
 }
 
-.project-image {
+.carrousel .project-image {
     height: 100%;
-
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -48,7 +48,7 @@
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: black;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
