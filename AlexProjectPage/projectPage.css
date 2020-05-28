@@ -74,7 +74,7 @@ body {
   justify-content: center;
   align-items: center;
    */
-  background-color: #f65454;
+  background-color: #db304cb5;
    /* background-image: url("https://thedigitalprojectmanager.com/wp-content/uploads/2019/06/project-objectives-featured-image.png"); */
 }
 
@@ -102,7 +102,11 @@ body {
   flex-wrap: wrap;
 }
 
-.project-box {
+/* .project-box {
+  padding:1%;
+} */
+
+.project-box:nth-child(1n) {
   max-width: 25%;
   /* width: 30%; */
   height: 500px;
@@ -111,10 +115,21 @@ body {
   /* border: 1px solid; */
 }
 
+.project-box:nth-child(2n) {
+  max-width: 25%;
+  /* width: 30%; */
+  height: 500px;
+  background-color:#a81e63; 
+  /* padding: 1%; */
+  /* border: 1px solid; */
+}
+
+
 .project-image-div {
   height: 50%;
   overflow: hidden;
   width: 100%;
+  /* padding: 2%; */
   /* border: 1px solid blue; */
   /* border-radius: 10px; */
   
@@ -145,6 +160,7 @@ body {
 
 
 
+
 /* mobile  */
 @media (min-width: 0px) and (max-width: 600px) {
 
@@ -156,9 +172,27 @@ body {
 
 }
 
-.project-box {
+/* .project-box {
   max-width: 100%;
   
+} */
+
+.project-box:nth-child(1n) {
+  max-width: 100%;
+  /* width: 30%; */
+  height: 500px;
+  background-color:#f65454; 
+  /* padding: 1%; */
+  /* border: 1px solid; */
+}
+
+.project-box:nth-child(2n) {
+  max-width: 100%;
+  /* width: 30%; */
+  height: 500px;
+  background-color:#a81e63; 
+  /* padding: 1%; */
+  /* border: 1px solid; */
 }
 
 
@@ -178,11 +212,27 @@ body {
     justify-content: center;
   }
 
-  .project-box {
+  /* .project-box {
     max-width: 50%;
-  }
+  } */
   /* flexbox */
-
+  .project-box:nth-child(1n) {
+    max-width: 50%;
+    /* width: 30%; */
+    height: 500px;
+    background-color:#f65454; 
+    /* padding: 1%; */
+    /* border: 1px solid; */
+  }
+  
+  .project-box:nth-child(2n) {
+    max-width: 50%;
+    /* width: 30%; */
+    height: 500px;
+    background-color:#a81e63; 
+    /* padding: 1%; */
+    /* border: 1px solid; */
+  }
 }
 
 
