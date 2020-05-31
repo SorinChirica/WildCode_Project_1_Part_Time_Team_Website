@@ -4,7 +4,7 @@ body {
 /* font sizes */
 p {
   margin-bottom: 1.15rem;
-  padding-left: 15px;
+  /* padding-left: 15px; */
   padding-right: 25px;
   font-size: clamp(1em, 1vw, 1.2em);
   font-family: "Ubuntu", sans-serif;
@@ -22,8 +22,8 @@ h5 {
 h2 {
   margin-top: 1rem;
   margin-bottom: 0;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
   font-size: clamp(0.8em, 1.5vw, 2em);
   font-family: "Press Start 2P", cursive;
   line-height: 1.3;
@@ -150,8 +150,8 @@ body {
   height: 50%;
   /* border: 1px solid; */
 
-  padding-left:1% ;
-  padding-right:1% ;
+  padding-left:5% ;
+  padding-right:5% ;
   /* overflow: hidden; */
   /* overflow-wrap: normal; */
 
