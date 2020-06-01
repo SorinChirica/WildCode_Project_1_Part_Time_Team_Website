@@ -556,19 +556,11 @@
     /* Tablet Options ------------------------------------------------- */
 
         @media screen and (max-width: 1100px){
-            #Footer-Social-icons-container{
-                padding-left:20vw;
-                padding-right:20vw;
-            }
         }
 
     /* Mobile Options ------------------------------------------------- */
 
         @media screen and (max-width: 600px){
-            #Footer-Social-icons-container{
-                padding-left:10vw;
-                padding-right:10vw;
-            }
         }
 
 /* ---------------> End of Footer Style */
