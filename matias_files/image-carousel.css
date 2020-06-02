@@ -7,6 +7,7 @@
   margin: auto;
   max-height: 500px;
   overflow: hidden;
+ 
 }
 
 /* Hide the images by default */
@@ -36,7 +37,7 @@
   border-radius: 3px 0 0 3px;
 }
 
-.project-image {
+.carrousel .project-image {
     height: 100%;
 }
 
@@ -72,6 +73,8 @@
   width: 15px;
   margin: 0 2px;
   background-color: #bbb;
+  position: relative;
+  top: -70px;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 1s ease;
