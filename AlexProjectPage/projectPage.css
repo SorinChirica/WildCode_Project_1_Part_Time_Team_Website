@@ -4,7 +4,7 @@ body {
 /* font sizes */
 p {
   margin-bottom: 1.15rem;
-  padding-left: 15px;
+  /* padding-left: 15px; */
   padding-right: 25px;
   font-size: clamp(1em, 1vw, 1.2em);
   font-family: "Ubuntu", sans-serif;
@@ -22,8 +22,8 @@ h5 {
 h2 {
   margin-top: 1rem;
   margin-bottom: 0;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
   font-size: clamp(0.8em, 1.5vw, 2em);
   font-family: "Press Start 2P", cursive;
   line-height: 1.3;
@@ -74,7 +74,7 @@ body {
   justify-content: center;
   align-items: center;
    */
-  background-color: #f65454;
+  background-color: #b4112cb5;
    /* background-image: url("https://thedigitalprojectmanager.com/wp-content/uploads/2019/06/project-objectives-featured-image.png"); */
 }
 
@@ -100,9 +100,14 @@ body {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #b4112cb5;
 }
 
-.project-box {
+/* .project-box {
+  padding:1%;
+} */
+
+.project-box:nth-child(1n) {
   max-width: 25%;
   /* width: 30%; */
   height: 500px;
@@ -111,10 +116,21 @@ body {
   /* border: 1px solid; */
 }
 
+.project-box:nth-child(2n) {
+  max-width: 25%;
+  /* width: 30%; */
+  height: 500px;
+  background-color:#a54d79; 
+  /* padding: 1%; */
+  /* border: 1px solid; */
+}
+
+
 .project-image-div {
   height: 50%;
   overflow: hidden;
   width: 100%;
+  /* padding: 2%; */
   /* border: 1px solid blue; */
   /* border-radius: 10px; */
   
@@ -131,16 +147,16 @@ body {
 /* text */
 .project-text-div {
   /* text-align: left; */
-  line-height: 0.5;
   height: 50%;
   /* border: 1px solid; */
 
-  padding-left:1% ;
-  padding-right:1% ;
+  padding-left:5% ;
+  padding-right:5% ;
   /* overflow: hidden; */
   /* overflow-wrap: normal; */
 
 }
+
 
 
 
@@ -156,9 +172,27 @@ body {
 
 }
 
-.project-box {
+/* .project-box {
   max-width: 100%;
   
+} */
+
+.project-box:nth-child(1n) {
+  max-width: 100%;
+  /* width: 30%; */
+  height: 500px;
+  background-color:#f65454; 
+  /* padding: 1%; */
+  /* border: 1px solid; */
+}
+
+.project-box:nth-child(2n) {
+  max-width: 100%;
+  /* width: 30%; */
+  height: 500px;
+  background-color:#a81e63; 
+  /* padding: 1%; */
+  /* border: 1px solid; */
 }
 
 
@@ -178,11 +212,27 @@ body {
     justify-content: center;
   }
 
-  .project-box {
+  /* .project-box {
     max-width: 50%;
-  }
+  } */
   /* flexbox */
-
+  .project-box:nth-child(1n) {
+    max-width: 50%;
+    /* width: 30%; */
+    height: 500px;
+    background-color:#f65454; 
+    /* padding: 1%; */
+    /* border: 1px solid; */
+  }
+  
+  .project-box:nth-child(2n) {
+    max-width: 50%;
+    /* width: 30%; */
+    height: 500px;
+    background-color:#a81e63; 
+    /* padding: 1%; */
+    /* border: 1px solid; */
+  }
 }
 
 
