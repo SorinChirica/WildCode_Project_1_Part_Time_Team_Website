@@ -1,10 +1,39 @@
 body {
-    background-image: url('./MatiasMedia/Main\ Page\ Wireframe.jpg');
+    /*background-image: url('./MatiasMedia/Main\ Page\ Wireframe.jpg');*/
     margin: 0;
 
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 button {
     border-radius: 0;
+}
+
+h1, h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 35px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 50%);
+}
+.subtitle {
+    font-size: 24px;
+    margin-bottom: 35px;
+    -webkit-text-stroke: 1px black;
+}
+
+h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 22px;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+
+    margin-bottom: 1.15rem;
+    font-size: clamp(1em, 1vw, 1.2em);
 }
 
 /* flex column preset */
@@ -17,6 +46,19 @@ button {
 
 /**/
 
+.button {
+    background-color: #383838;
+    border: none;
+    color: white;
+    padding: 14px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
 .bodyContainer {
     display: flex;
     flex-direction: column;
@@ -26,7 +68,7 @@ button {
 .headerTop {
     width: 100%;
     height: 383px;
-    background-color: #383838;
+    background-color: #f65454;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -35,7 +77,7 @@ button {
 .headerContentCenter {
     margin-top: 55px;
     width: 50%;
-    color: white;
+    color: black;
 }
 
 /* HEADER ADMIN PICS */
@@ -47,42 +89,45 @@ button {
     justify-content: center;
     position: relative;
     top: 61px;
+    
 }
 
 .circleAdminPicsRow {
     width: 61%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; 
 }
 
 .container_cirleAdminPics {
     display: flex;
     width: 256px;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
 .container_cirleAdminText {
     text-align: center;
+    color: black;
 }
 
 .circleAdminPics {
     border-radius: 100%;
     width: 163px;
     height: 163px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 50%);
 }
 
 .headerBottom {
     width: 100%;
-    height: 269px;
+    height: 300px;
     margin: 0;
-    background-color: white;
+    background-color: #FFFFFF;
 }
 
 /* HEADER ADMIN PICS - End*/
 
 .linkToPageA {
+    border-top: 1px solid rgb(241, 240, 240);
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -108,13 +153,47 @@ button {
     margin: 0;
 }
 
-.linktoPagePic {
+.linktoPagePic-container {
     width: 260%;
-    background-color: #383838;
+    background-color: black;
+    overflow: hidden;
 }
 
+.linktoPagePic-image {
+    width: 870px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100%;
+    display: block;
+    filter: saturate(70%);
+    transition: 0.5s;
+}
+
+
 .linktoPageText-container {
-    background-color: #ededed;
+    width: 1570px;
+}
+
+/* JS TEST */
+
+img {
+  transition:all 1s linear
+}
+img.view {
+    filter: saturate(70%);
+
+}
+
+/**/
+/*
+.linktoPagePic-image:hover {
+    filter: saturate(70%);
+    cursor: pointer;
+} */
+
+.linktoPageText-container {
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,17 +201,15 @@ button {
 }
 
 .linktoPageText {
-    width: 70%;
+    width: 60%;
 }
 
 /* carrousel */
 
 .carrousel {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: row;
+    background-color: #f65454;
     width: 100%;
-    height: 390px;
+    /* height: 500px; */
     margin: 0;
 }
 
@@ -159,17 +236,60 @@ button {
     overflow: hidden;
 }
 
+/* LINKS TO COURSES */
+
 .linksToCourses {
-    background-color: #ededed;
+    background-color: #FFFFFF;
     width: 100%;
-    height: 540px;
+    height: 650px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.coursesContainer {
+    width: 350px;
+    height: 350px;
+    margin: 150px 80px 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picAndNumberContainer {
+    height: 290px;
+}
+
+.coursesNumber {
+    position: relative;
+    font-size: 55px;
+    top: -120px;
+    width: 340px;
+}
+
+.coursesTextContainer {
+}
+
+
+.footer {
+    background-color: #f65454;
+    width: 100%;
+    height: 50px;
     margin: 0;
 }
 
-.footer {
-    border: 1px solid black;
-    background-color: #383838;
-    width: 100%;
-    height: 300px;
-    margin: 0;
+@media only screen and (min-width: 1300px) {
+.linktoPagePic-image {
+    width: 1000px;
+    max-height: 120%;
 }
+}
+
+@media only screen and (min-width: 1500px) {
+    .linktoPagePic-image {
+        width: 1160px;
+        max-height: 125%;
+    }
+    }
