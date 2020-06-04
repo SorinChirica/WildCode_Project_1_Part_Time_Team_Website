@@ -2,10 +2,10 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 85%;
+  max-width: 90%;
   position: relative;
   margin: auto;
-  max-height: 500px;
+  max-height: 600px;
   overflow: hidden;
  
 }
