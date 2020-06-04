@@ -1,4 +1,15 @@
 
+document.getElementById("mySidebar").addEventListener("mouseover", mouseOver);
+document.getElementById("mySidebar").addEventListener("mouseout", mouseOut);
+function mouseOver() {
+  document.getElementById("mySidebar").style.marginRight="0px";
+}
+function mouseOut() {
+  document.getElementById("mySidebar").style.marginRight="-50px";
+}
+
+
+
 // Sidebar toggle function //
 var mini = true;
 function toggleSidebar() {

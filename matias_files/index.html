@@ -16,17 +16,24 @@
     
         <link rel="stylesheet" type="text/css" href="index_styles.css">
         <link rel="stylesheet" type="text/css" href="image-carousel.css" />
-        <link href="Project1_stylesidebar.css" rel="stylesheet" type="text/css" />
+        <link href="sidebar_styles.css" rel="stylesheet" type="text/css" />
 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">  <!-- icon script -->
               <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,700&display=swap" rel="stylesheet"> <!-- font script -->
     </head>
     <body>
+        <!-- NAV BAR START -->
+        <div class="navbar-container">
 
-        <!-- place in top of the body! --> 
+        </div>
+        <!-- NAV BAR END -->
+
+
+
+        <!-- sidebar start --> 
         <div id="mySidebar" class="sidebar">                 
-            <div class="sidebarItems">
+            <div style="border-radius: 30px 0px 0px 0px;" class="sidebarItems">
                  <a id="plus" onclick="toggleIconToMinus(); toggleSidebar()"><span><i class="material-icons iconSize">add</i></a><br>
                  <a id="minus"  onclick="toggleSidebar(); toggleIconToPlus()"><span><i class="material-icons iconSize" >remove</i></a><br>
             </div>
@@ -35,7 +42,7 @@
             </div>
               
             <div class="sidebarItems">
-                 <a href="#"><span><i class="material-icons iconSize">supervisor_account</i>
+                 <a href="Sorin-Class_Members_Page/Class_Members.html"><span><i class="material-icons iconSize">supervisor_account</i>
               <span class="icon-text">class</span></a><br>
             </div>
               
@@ -43,18 +50,18 @@
                   <a href="#"><span><i class="material-icons">card_travel</i><span class="icon-text">projects</span></a><br>
             </div>
               
-            <div class="sidebarItems iconCourses">
+            <div style="height: 100px; border-radius: 0px 0px 0px 30px;" class="sidebarItems iconCourses">
                   <a href="#"><span><i class="material-icons iconSize">menu_book</i><span class="icon-text">courses</span></a><br>
-      </div>
-   </div>
-<!--------- sidebar end --------->
+            </div>
+        </div>
+        <!--------- sidebar end --------->
 
         <div class="bodyContainer">
             <div class="headerTop">
                 <div class="headerContentCenter">
                     <h1>Wild Code School</h1>
                     <h1 class="subtitle">Class Of 2020</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iste voluptatibus rerum consectetur similique odio, ut nemo fugit temporibus quidem blanditiis officiis cum hic doloribus nisi error necessitatibus laborum eveniet.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     
                 </div>
             </div>
@@ -89,7 +96,7 @@
 
                     <div class="flexColumn">
                         <div class="container_cirleAdminPics">
-                            <img class="circleAdminPics" src="https://i.ibb.co/vcH9gFM/Screen-Shot-2020-05-23-at-4-05-50-PM.png" class="circleAdminPics"> 
+                            <img class="circleAdminPics" src="https://avatars1.githubusercontent.com/u/64038264?s=460&u=e96e069a77a30c26d48973b23155b3a05f183297&v=4" class="circleAdminPics"> 
                         </div>
                         <div class="container_cirleAdminText">
                             <p style="font-weight: bold;">Matias Espina</p>
@@ -103,11 +110,12 @@
 
             </div>
 
-            <!-- Links To Page -->
+            <!-- Links To Pages -->
 
+                <!-- LINK TO CLASS -->
             <div class="linkToPageA">
-                <div class="linktoPagePic">
-
+                <div class="linktoPagePic-container">
+                    <img class="linktoPagePic-image mediaQueryImg" src="./MatiasMedia/Index_Page_Main_image.jpg" alt="">
                 </div>
                 <div class="linktoPageText-container">
                     <div class="linktoPageText">
@@ -118,22 +126,24 @@
                 </div>
             </div>
 
+                <!-- LINK TO PROJECTS -->
             <div class="linkToPageB">
-                <div class="linktoPageText-container">
+                <div class="linktoPageText-container" id="linktoPageText-container-FIX">
                     <div class="linktoPageText">
                         <h3>PROJECTS</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vero vitae voluptas rerum maxime accusamus, quae praesentium ea consequatur distinctio, at facere inventore voluptatem assumenda perferendis esse excepturi rem exercitationem.</p>
                         <input type="button" class="button" value="VIEW MORE">
                     </div>
                 </div>
-                <div class="linktoPagePic">
-
+                <div class="linktoPagePic-container">
+                    <img id="scroll-to" class="linktoPagePic-image mediaQueryImg" style="filter:saturate(30%)" src="./MatiasMedia/index_projects_backgroundimage.jpg" alt="">
                 </div>
             </div>
 
-            <div class="linkToPageC">
-                <div class="linktoPagePic">
-
+                <!-- LINK TO COURSES -->
+            <div class="linkToPageC" id="linkToPageC-FIX">
+                <div class="linktoPagePic-container">
+                    <img class="linktoPagePic-image mediaQueryImg" style="filter:saturate(80%)" src="https://medias-cite.coop/wp-content/uploads/2019/05/wcs_logo_pink_background_400x220.png" alt="">
                 </div>
                 <div class="linktoPageText-container">
                     <div class="linktoPageText">
@@ -144,65 +154,83 @@
                 </div>
             </div>
 
-            <!-- <div class="carrousel"> -->
-                <div class="carrousel">
+            <!-- CARROUSEL -->
+            <div class="carrousel">
                 <div class="slideshow-container">
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides fade">
                   
                       <img class="project-image" src="../AlexProjectPage/AlexMedia/examples/carlos-muza-hpjSkU2UYSU-unsplash.jpg" style="width:100%">
-                      <div class="text">Caption Text</div>
+                      <div class="text"></div> <!-- Text for caption dhould be here -->
                     </div>
                     <div class="mySlides fade">
              
                       <img class="project-image" src="../AlexProjectPage/AlexMedia/examples/daniel-kuruvilla-tSJc5U6f1M4-unsplash.jpg" style="width:100%">
-                      <div class="text">Caption Two</div>
+                      <div class="text"></div> <!-- Text for caption dhould be here -->
                     </div>
                   
                     <div class="mySlides fade">
                     
                       <img class="project-image" src="../AlexProjectPage/AlexMedia/examples/edho-pratama-T6fDN60bMWY-unsplash.jpg" style="width:100%">
-                      <div class="text">Caption Three</div>
+                      <div class="text"></div> <!-- Text for caption dhould be here -->
                     </div>
                   
                     <!-- Next and previous buttons -->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                  
+                  
                   </div>
-                  <br>
+
+                
+                  
                   <!-- The dots/circles -->
-                  <div style="text-align:center">
+                  <div style="text-align:center; height: 0;">
                       <span class="dot" onclick="currentSlide(1)"></span>
                       <span class="dot" onclick="currentSlide(2)"></span>
                       <span class="dot" onclick="currentSlide(3)"></span>
                     </div>
+            </div>
+            <!-- END CARROUSSEL -->
 
-                <!-- <div class="carrouselText-container">
-                    <div class="carrouselText">
-                        <p>
-                            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vero vitae voluptas rerum maxime accusamus, quae praesentium ea consequatur distinctio, at facere inventore voluptatem assumenda perferendis esse excepturi rem exercitationem."
-                        </p>
-                        <p>
-                            EXAMPLE NAME
-                        </p>
+            <!-- COURSES BOXES -->
+            <div class="linksToCourses">
+
+                <!-- BLOCK CONTAINER 1 -->
+                <div class="coursesContainer">
+                    <!-- PIC AND NUMBER -->
+                    <div class="picAndNumberContainer">
+                        <!-- PIC -->
+                        <div><img src="https://via.placeholder.com/250" alt=""></div>
+                        <!-- NUMBER -->
+                        <div class="coursesNumber">Web developer - Full-time</div>
+                    </div>
+                    <!-- TEXT -->
+                    <div class="coursesTextContainer">
+
                     </div>
                 </div>
-                <div class="carrouselPic">
-                    <img class="carrouselPicJPEG" src="https://omegamma.com.au/wp-content/uploads/2017/04/default-image.jpg" alt="">
-                </div> -->
+
+                <!-- BLOCK CONTAINER 2 -->
+                <div class="coursesContainer">
+                    <!-- PIC AND NUMBER -->
+                    <div class="picAndNumberContainer">
+                        <!-- PIC -->
+                        <div><img src="https://via.placeholder.com/250" alt=""></div>
+                        <!-- NUMBER -->
+                        <div class="coursesNumber">Front-end<br> - Part-time</div>
+                    </div>
+                    <!-- TEXT -->
+                    <div class="coursesTextContainer">
+
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
-            <div class="linksToCourses">
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-            </div>
             <div class="footer">
                 <p>
                     EXCEUS SINT ACCAECAT
@@ -211,5 +239,6 @@
         </div>
         <script src="image-carousel.js"></script>
         <script type="text/javascript" src="Sidebar.js"></script>
+        <script type="text/javascript" src="index.js"></script>
     </body>
 </html>
