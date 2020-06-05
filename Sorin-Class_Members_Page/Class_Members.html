@@ -6,6 +6,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">  <!-- icon script -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -14,6 +17,30 @@
 </head>
 
 <body>
+    <!-- sidebar start --> 
+    <div id="mySidebar" class="sidebar">                 
+        <div style="border-radius: 30px 0px 0px 0px;" class="sidebarItems">
+                <a id="plus" onclick="toggleIconToMinus(); toggleSidebar()"><span><i class="material-icons iconSize">add</i></a><br>
+                <a id="minus"  onclick="toggleSidebar(); toggleIconToPlus()"><span><i class="material-icons iconSize" >remove</i></a><br>
+        </div>
+        <div class="sidebarItems">
+                <a href="../matias_files/index.html"><span><i class="material-icons iconSize">home</i><span class="icon-text">home</span></a><br>
+        </div>
+            
+        <div class="sidebarItems">
+                <a href="../Sorin-Class_Members_Page/Class_Members.html"><span><i class="material-icons iconSize">supervisor_account</i>
+            <span class="icon-text">class</span></a><br>
+        </div>
+            
+        <div class="sidebarItems">
+                <a href="../AlexProjectPage/project_page.html"><span><i class="material-icons">card_travel</i><span class="icon-text">projects</span></a><br>
+        </div>
+            
+        <div style="height: 100px; border-radius: 0px 0px 0px 30px;" class="sidebarItems iconCourses">
+                <a href="#"><span><i class="material-icons iconSize">menu_book</i><span class="icon-text">courses</span></a><br>
+        </div>
+    </div>
+    <!--------- sidebar end --------->
 
  <!-- Top Div ----------------------------------------------------------->
     <div class="Members-bigger-main-container-top">
@@ -381,5 +408,6 @@
             </div>
         </div> -->
     </div>
+    <script type="text/javascript" src="../matias_files/Sidebar.js"></script>
 </body>
 </html>
