@@ -207,7 +207,7 @@ p {
 /* JS TEST */
 
 
-}
+
 
 /**/
 /*
@@ -220,43 +220,31 @@ p {
     width: 60%;
 }
 
-/* carrousel */
 
-.carrousel {
-    background-color: #f65454;
-    width: 100%;
-    /* height: 500px; */
-    margin: 0;
-}
-
-.carrouselText-container {
+/* .carrouselText-container {
     background-color: #383838;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     width: 50%;    
-}
+} */
 
-.carrouselText {
+/* .carrouselText {
     width: 80%;
 }
 
 .carrouselPic {
     width: 50%;     
-}
+} */
 
-.mySlides {
-
-    width: 100%;
-}
-
-
-.carrouselPicJPEG {
+/* .carrouselPicJPEG {
     width: 100%;
     object-fit: cover; 
     overflow: hidden;
-}
+} */
+
+
 
 /* LINKS TO COURSES */
 
