@@ -23,6 +23,13 @@
               <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,700&display=swap" rel="stylesheet"> <!-- font script -->
     </head>
     <body>
+        <!-- NAV BAR START -->
+        <div class="navbar-container">
+
+        </div>
+        <!-- NAV BAR END -->
+
+
 
         <!-- sidebar start --> 
         <div id="mySidebar" class="sidebar">                 
@@ -35,12 +42,12 @@
             </div>
               
             <div class="sidebarItems">
-                 <a href="Sorin-Class_Members_Page/Class_Members.html"><span><i class="material-icons iconSize">supervisor_account</i>
+                 <a href="../Sorin-Class_Members_Page/Class_Members.html"><span><i class="material-icons iconSize">supervisor_account</i>
               <span class="icon-text">class</span></a><br>
             </div>
               
             <div class="sidebarItems">
-                  <a href="#"><span><i class="material-icons">card_travel</i><span class="icon-text">projects</span></a><br>
+                  <a href="../AlexProjectPage/project_page.html"><span><i class="material-icons">card_travel</i><span class="icon-text">projects</span></a><br>
             </div>
               
             <div style="height: 100px; border-radius: 0px 0px 0px 30px;" class="sidebarItems iconCourses">
@@ -53,8 +60,8 @@
             <div class="headerTop">
                 <div class="headerContentCenter">
                     <h1>Wild Code School</h1>
-                    <h1 class="subtitle">Class Of 2020</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iste voluptatibus rerum consectetur similique odio, ut nemo fugit temporibus quidem blanditiis officiis cum hic doloribus nisi error necessitatibus laborum eveniet.</p>
+                    <h1 class="subtitle"><span class="text-decoration before-the-name"> # &nbsp;  </span> Class Of 2020</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     
                 </div>
             </div>
@@ -108,35 +115,37 @@
                 <!-- LINK TO CLASS -->
             <div class="linkToPageA">
                 <div class="linktoPagePic-container">
-                    <img class="linktoPagePic-image" src="https://media-exp1.licdn.com/dms/image/C4D1BAQERVuEvelm5GA/company-background_10000/0?e=2159024400&v=beta&t=T6UBX00raDTTUH2YyIHwCf6ZmyEHmTFuHCyKpj0KDNg" alt="">
+                    <img class="linktoPagePic-image mediaQueryImg" src="./MatiasMedia/Index_Page_Main_image.jpg" alt="">
                 </div>
                 <div class="linktoPageText-container">
                     <div class="linktoPageText">
                         <h3>CLASS</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vero vitae voluptas rerum maxime accusamus, quae praesentium ea consequatur distinctio, at facere inventore voluptatem assumenda perferendis esse excepturi rem exercitationem.</p>
-                        <input type="button" class="button" value="VIEW MORE">
+                        <a href="../Sorin-Class_Members_Page/Class_Members.html"><input type="button" class="button"  value="VIEW MORE"></a>
                     </div>
                 </div>
             </div>
 
                 <!-- LINK TO PROJECTS -->
             <div class="linkToPageB">
-                <div class="linktoPageText-container">
+                <div class="linktoPageText-container" id="linktoPageText-container-FIX">
                     <div class="linktoPageText">
                         <h3>PROJECTS</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vero vitae voluptas rerum maxime accusamus, quae praesentium ea consequatur distinctio, at facere inventore voluptatem assumenda perferendis esse excepturi rem exercitationem.</p>
-                        <input type="button" class="button" value="VIEW MORE">
+                        <a href="../AlexProjectPage/project_page.html">
+                            <input type="button" class="button" value="VIEW MORE">
+                        </a>
                     </div>
                 </div>
                 <div class="linktoPagePic-container">
-                    <img id="scroll-to" class="linktoPagePic-image" src="./MatiasMedia/index_projects_backgroundimage.jpg" alt="">
+                    <img id="scroll-to" class="linktoPagePic-image mediaQueryImg" style="filter:saturate(30%)" src="./MatiasMedia/index_projects_backgroundimage.jpg" alt="">
                 </div>
             </div>
 
                 <!-- LINK TO COURSES -->
-            <div class="linkToPageC">
+            <div class="linkToPageC" id="linkToPageC-FIX">
                 <div class="linktoPagePic-container">
-
+                    <img class="linktoPagePic-image mediaQueryImg" style="filter:saturate(80%)" src="https://medias-cite.coop/wp-content/uploads/2019/05/wcs_logo_pink_background_400x220.png" alt="">
                 </div>
                 <div class="linktoPageText-container">
                     <div class="linktoPageText">
@@ -152,20 +161,11 @@
                 <div class="slideshow-container">
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides fade">
-                  
-                      <img class="project-image" src="../AlexProjectPage/AlexMedia/examples/carlos-muza-hpjSkU2UYSU-unsplash.jpg" style="width:100%">
-                      <div class="text"></div> <!-- Text for caption dhould be here -->
+                      <img class="project-image" src="../AlexProjectPage/AlexMedia/design/desktop-design-slide-1.jpg" style="width:100%">
                     </div>
                     <div class="mySlides fade">
              
-                      <img class="project-image" src="../AlexProjectPage/AlexMedia/examples/daniel-kuruvilla-tSJc5U6f1M4-unsplash.jpg" style="width:100%">
-                      <div class="text"></div> <!-- Text for caption dhould be here -->
-                    </div>
-                  
-                    <div class="mySlides fade">
-                    
-                      <img class="project-image" src="../AlexProjectPage/AlexMedia/examples/edho-pratama-T6fDN60bMWY-unsplash.jpg" style="width:100%">
-                      <div class="text"></div> <!-- Text for caption dhould be here -->
+                      <img class="project-image" src="../AlexProjectPage/AlexMedia/design/desktop-design-slide-2.jpg" style="width:100%">
                     </div>
                   
                     <!-- Next and previous buttons -->
@@ -179,11 +179,10 @@
                 
                   
                   <!-- The dots/circles -->
-                  <div style="text-align:center; height: 0;">
+                  <!-- <div style="text-align:center; height: 0;">
                       <span class="dot" onclick="currentSlide(1)"></span>
                       <span class="dot" onclick="currentSlide(2)"></span>
-                      <span class="dot" onclick="currentSlide(3)"></span>
-                    </div>
+                    </div> -->
             </div>
             <!-- END CARROUSSEL -->
 
@@ -224,11 +223,46 @@
 
             </div>
         </div>
-            <div class="footer">
-                <p>
-                    EXCEUS SINT ACCAECAT
-                </p>
+            <!-- Footer -----------------------------------------------------------> 
+
+    <div id="Footer-main-container">
+        <div id="Title-Logo-and-Social-Icons-container">
+            <div id="Footer-Title-Logo-container">
+                <div>
+                    <h2 id="Footer-Title"> That's it from us :D </h2>
+                </div>
+                <div>
+                    <h3 id="Footer-SubTitle"> Find out more from them </h2>
+                </div>
+                <div>
+                    <a href="https://www.wildcodeschool.com/"><img id="Footer-Logo" src="./MatiasMedia/WildCodeLogo.png" alt="WildCode School Logo"/></a>
+                </div>
             </div>
+            <div id="Footer-Social-icons-container">
+                <div>
+                    <a href="#" class="fa fa-facebook Socioal-icons First-social-icon"></a>
+                </div>
+                <div>
+                    <a href="#" class="fa fa-twitter Socioal-icons""></a>
+                </div>
+                <div>
+                    <a href="#" class="fa fa-linkedin Socioal-icons""></a>
+                </div>
+                <div>
+                    <a href="#" class="fa fa-youtube Socioal-icons""></a>
+                </div>
+                <div>
+                    <a href="#" class="fa fa-github Socioal-icons""></a>
+                </div>
+                <div>
+                    <a href="#" class="fa fa-instagram Socioal-icons"></a>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
         </div>
         <script src="image-carousel.js"></script>
         <script type="text/javascript" src="Sidebar.js"></script>
