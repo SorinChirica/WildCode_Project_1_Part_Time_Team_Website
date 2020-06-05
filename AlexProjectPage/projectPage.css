@@ -161,8 +161,6 @@ body {
 
 
 
-
-
 /* mobile  */
 @media (min-width: 0px) and (max-width: 600px) {
 
@@ -197,11 +195,6 @@ body {
   /* border: 1px solid; */
 }
 
-
-/* .project-image-div {
-}
-
-} */
 }
 
 /* Ipad */
@@ -238,6 +231,7 @@ body {
 }
 
 
+/* sidebar -------------------------*/
 #minus {
   position: relative;
   display: none;
