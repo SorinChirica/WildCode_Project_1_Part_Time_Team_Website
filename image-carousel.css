@@ -8,6 +8,7 @@
   width: 100%;
   /* height: 500px; */
   /* margin: 0; */
+  margin-bottom: 60px;
 }
 
 /* Slideshow container */
@@ -115,3 +116,17 @@
   from {opacity: .4}
   to {opacity: 1}
 } */
+
+@media only screen and (max-width: 600px) {
+  .carrousel {
+    margin-bottom: 10px;
+  }
+  .slideshow-container {
+    height: 300px;
+  }
+  .mySlides {
+    width: 120%;
+    position: relative;
+    left: -60px;
+  }
+}
