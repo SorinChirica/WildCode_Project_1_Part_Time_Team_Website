@@ -100,6 +100,7 @@ h5 {font-size: clamp(1em, 1vw, 1.5em);}
 /* flex column preset */
 
 .flexColumn {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,6 +149,7 @@ h5 {font-size: clamp(1em, 1vw, 1.5em);}
     
 }
 
+
 .headerBackgroundImage {
     position: absolute;
     top: -205px;
@@ -185,6 +187,7 @@ h5 {font-size: clamp(1em, 1vw, 1.5em);}
 
 
 .container_cirleAdminPics {
+    
     display: flex;
     width: 256px;
     justify-content: center; 
@@ -513,6 +516,7 @@ h5 {font-size: clamp(1em, 1vw, 1.5em);}
         display: block;
         filter: saturate(70%);
         transition: 0.5s;
+        
     }
 
     .linktoPageText-container {
