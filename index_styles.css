@@ -103,6 +103,7 @@ h5 {font-size: clamp(1em, 1vw, 1.5em);}
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /**/
@@ -154,7 +155,7 @@ h5 {font-size: clamp(1em, 1vw, 1.5em);}
 }
 
 .headerContentCenter {
-    margin-top: 80px;
+    margin-top: 90px;
     width: 50%;
     color: black;
     z-index: 2;
@@ -174,11 +175,14 @@ h5 {font-size: clamp(1em, 1vw, 1.5em);}
 }
 
 .circleAdminPicsRow {
+    
     width: 61%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; 
 }
+
+
 
 .container_cirleAdminPics {
     display: flex;
@@ -189,6 +193,13 @@ h5 {font-size: clamp(1em, 1vw, 1.5em);}
 .container_cirleAdminText {
     text-align: center;
     color: black;
+
+}
+
+.container_cirleAdminText p {
+
+    height: 30px;
+    overflow: visible;
 }
 
 .circleAdminPics {
@@ -394,6 +405,14 @@ h5 {font-size: clamp(1em, 1vw, 1.5em);}
     .headerTop {
         margin-top: 120px;
     }
+
+    .headerContentCenter {
+
+        font-size: larger;
+
+        
+    }
+
     #mySidebar {display: none;}
     .headerTop {
         width: 100%;
@@ -412,7 +431,7 @@ h5 {font-size: clamp(1em, 1vw, 1.5em);}
     }
 
     .headerContentCenter {
-        margin-top: 55px;
+        margin-top: 76px;
         width: 80%;
         color: black;
     }
@@ -421,15 +440,24 @@ h5 {font-size: clamp(1em, 1vw, 1.5em);}
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap; 
+       
+    }
 
+    .alexPic {
+        margin-top: 30px;
+    }
+
+    .sorinPic {
+        margin-bottom: 100px;
+        margin-top: 60px;
     }
     
     .container_cirleAdminPics {
         display: flex;
         width: 256px;
-
         justify-content: center; 
     }
+  
 
     .circleAdminPics {
         border-radius: 100%;
@@ -438,9 +466,13 @@ h5 {font-size: clamp(1em, 1vw, 1.5em);}
         box-shadow: 1px 1px 6px rgba(0, 0, 0, 50%);
     }
 
+    .container_cirleAdminText {
+        margin-left: 20px;
+    }
+
     .headerBottom {
         width: 100%;
-        height: 990px;
+        height: 1100px;
         margin: 0;
         background-color: #FFFFFF;
     }
