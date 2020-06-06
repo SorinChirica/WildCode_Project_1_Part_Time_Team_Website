@@ -208,8 +208,12 @@ body {
 }
 
 .text-box-container .text-box {
-
 }
+
+.text-box-container .text-box .text{
+  text-align: center;
+}
+
 
 .banner-image {
   display:none;
