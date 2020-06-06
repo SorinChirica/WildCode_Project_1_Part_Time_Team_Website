@@ -75,7 +75,7 @@ body {
   background-color: #222222;
 }
 
-/* ---- */
+/* -------------- ----------------------*/
 /* projects banner */
 /* Q- could not alight left the heading */
 
@@ -83,27 +83,46 @@ body {
   /* display: flex;
   justify-content: center;
   align-items: center;
-   */
-   
-  background-color: #b4112cb5;
-   /* background-image: url("https://thedigitalprojectmanager.com/wp-content/uploads/2019/06/project-objectives-featured-image.png"); */
-}
+   */ 
+
+  background-color: #f65454;
+/* background-image: url(../Media_General/Main_Background_Images/Research_page_main_image.jpg); */
+  /* background-position: right top; */
+  }
 
 .text-box-container .text-box {
   text-align: left;
-  margin: auto;
+  display:flex;
+  flex-direction: row;
+  /* margin-left: 50%; */
+  /* width: 50% ; */
+  
   /* no need width 80% here */
   padding: 5%;
   /* padding should not be colored */
+  /* position: absolute; */
 }
 
-.text-box-container .text {
-  background-color: aliceblue;
+
+
+.text-box-container .text-box .text {
+  /* background-color: #FEDDDE; */
   padding: 2%;
+  margin:auto;
 }
 
+.banner-image {
+  width: 100%;
+  padding: 2%;
+  margin: auto;
+}
+.text-box-container .text-box .text h1 {
 
-/* ----- */
+  margin-bottom: 1rem;
+} 
+
+
+/* -------------------------------------------------- */
 /* projects flexbox*/
 .project-container {
   
@@ -112,7 +131,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
-  background-color: #b4112cb5;
+  background-color: #f65454;
 }
 
 /* .project-box {
@@ -132,7 +151,7 @@ body {
   max-width: 25%;
   /* width: 30%; */
   height: 500px;
-  background-color:#a54d79; 
+  background-color:#FEDDDE
   /* padding: 1%; */
   /* border: 1px solid; */
 }
@@ -171,7 +190,13 @@ body {
 
 
 
-/* mobile  */
+
+
+
+
+
+
+/* mobile ------- */
 @media (min-width: 0px) and (max-width: 600px) {
 
 .project-container {
@@ -180,6 +205,14 @@ body {
   align-items: center;
 /* didnt make a difference putting the above code */
 
+}
+
+.text-box-container .text-box {
+
+}
+
+.banner-image {
+  display:none;
 }
 
 /* .project-box {
@@ -200,7 +233,7 @@ body {
   max-width: 100%;
   /* width: 30%; */
   height: 500px;
-  background-color:#a81e63; 
+  background-color:#FEDDDE; 
   /* padding: 1%; */
   /* border: 1px solid; */
 }
@@ -238,7 +271,7 @@ body {
 
 }
 
-/* Ipad */
+/* Ipad ------------*/
 @media (min-width: 601px) and (max-width: 1100px) {
   .project-container {
     display: flex;
@@ -265,7 +298,7 @@ body {
     max-width: 50%;
     /* width: 30%; */
     height: 500px;
-    background-color:#a81e63; 
+    background-color:#FEDDDE; 
     /* padding: 1%; */
     /* border: 1px solid; */
   }
