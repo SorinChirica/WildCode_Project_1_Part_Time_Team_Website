@@ -392,6 +392,84 @@ margin-left: 10px;
 
 
 
+/* This is for the Footer */
+
+#Footer-main-container {
+  display:flex;
+  padding-top:50px;
+  padding-left:50px;
+  padding-bottom:50px;
+
+  -webkit-box-shadow: inset 0px 37px 42px -40px rgba(0,0,0,0.95);
+  -moz-box-shadow: inset 0px 37px 42px -40px rgba(0,0,0,0.95);
+  box-shadow: inset 0px 37px 42px -40px rgba(0,0,0,0.95);
+  background-color:#f65454; 
+}
+#Footer-main-container div {
+  flex:1;
+  text-align:center;
+}
+#Footer-Title{
+  padding-left:0px!important;
+}
+
+#Courses-images-container{
+  display:flex;
+}
+#Courses-images-container div{
+  flex:1;
+  text-align:center;
+}
+
+#Footer-Social-icons-container{
+  display:none;
+}
+#Footer-Social-icons-container div{
+  flex:none;
+}
+.Socioal-icons{
+  padding-left: 30px;
+  padding-top:15px;
+}
+.First-social-icon{
+  padding-left:0px;
+}
+
+#Footer-Logo {
+  width:150px;
+  height:50px;
+  align-self:flex-start;
+  padding-top:30px;
+}
+
+.Footer-course-image{
+  width:65%;
+  Height:auto;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding:10px
+}
+.Footer-course-title{
+  padding-bottom:15px;
+}
+
+@media screen and (max-width: 1100px){
+  #Footer-main-container {
+      padding-left:0px;
+  }
+
+
+  #Footer-main-container div {
+      text-align:center;
+      
+  }
+  #Courses-images-container{
+      display:none;
+  }
+}
+
+
+
 /* other issues to think about */
 
 /* text overflow from project-text-div */
